@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93d2f8e3-047d-4743-a67e-20bf979146ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mmseg4j_analysis_1_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mmseg4j_core_1_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mmseg4j_solr_1_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/webIR_program1/Dictionary/units.dic" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/webIR_program1/Dictionary/words.dic" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Program1/action/ChineseMMSeg.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Program1/Entity/QueryEntity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Program1/IMRetrievalSystem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webIR_program1.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Program1/Entity/DocumentEntity.java" afterPath="$PROJECT_DIR$/src/Program1/Entity/DocumentEntity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Program1/action/XMLParser.java" afterPath="$PROJECT_DIR$/src/Program1/action/XMLParser.java" />
@@ -73,7 +76,7 @@
       <file leaf-file-name="IMRetrievalSystem.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Program1/IMRetrievalSystem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="387">
               <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -893,12 +896,12 @@
       <workItem from="1491151038858" duration="20941000" />
       <workItem from="1491217719097" duration="10155000" />
       <workItem from="1491243882824" duration="21000" />
-      <workItem from="1491243955011" duration="8575000" />
+      <workItem from="1491243955011" duration="8687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39732000" />
+    <option name="totallyTimeSpent" value="39844000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1250,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Program1/IMRetrievalSystem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
+        <state relative-caret-position="387">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
