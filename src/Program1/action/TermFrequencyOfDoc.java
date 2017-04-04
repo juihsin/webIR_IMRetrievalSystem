@@ -13,8 +13,7 @@ public class TermFrequencyOfDoc {
     public TermFrequencyOfDoc() {
     }
 
-    public void calcTermFreEachDoc(List<DocumentEntity> documents) {
-        DocTermFrequencyEntity docTermFrequencyEntity = new DocTermFrequencyEntity();
+    public void calcTermFreEachDoc(List<DocumentEntity> documents, DocTermFrequencyEntity docTermFrequencyEntity) {
         for (DocumentEntity documentEntity : documents) {
             String docID = documentEntity.getId();
             String docSegContent = documentEntity.getContentAfterSeg();
@@ -34,8 +33,6 @@ public class TermFrequencyOfDoc {
                     }
                 }
                 docTermFrequencyEntity.setTermFrequency(word, docIDToTermFre); // 哪個字
-                System.out.println(word); // TODO Test
-                System.out.println(termFrequency.get(word)); // TODO Test
             }
         }
     }

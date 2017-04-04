@@ -18,8 +18,6 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import Program1.Entity.DocumentEntity;
 
-import static com.sun.tools.doclets.formats.html.markup.HtmlStyle.title;
-
 public class XMLParser {
     // Combine all text of a Document
     public String combineDocContent(DocumentEntity documentEntity) {

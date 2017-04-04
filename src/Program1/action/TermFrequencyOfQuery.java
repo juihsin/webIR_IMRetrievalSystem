@@ -15,8 +15,7 @@ public class TermFrequencyOfQuery {
     public TermFrequencyOfQuery() {
     }
 
-    public void calcTermFreEachQuery(List<QueryEntity> queries) {
-        QueryTermFrequencyEntity queryTermFrequencyEntity = new QueryTermFrequencyEntity();
+    public void calcTermFreEachQuery(List<QueryEntity> queries, QueryTermFrequencyEntity queryTermFrequencyEntity) {
         for (QueryEntity queryEntity : queries) {
             String queryID = queryEntity.getNumber();
             String querySegContent = queryEntity.getContentAfterSeg();
@@ -36,8 +35,6 @@ public class TermFrequencyOfQuery {
                     }
                 }
                 queryTermFrequencyEntity.setTermFrequency(word, queryIDToTermFre); // 哪個字
-                System.out.println(word); // TODO Test
-                System.out.println(termFrequency.get(word)); // TODO Test
             }
         }
     }
