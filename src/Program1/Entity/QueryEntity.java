@@ -10,6 +10,7 @@ public class QueryEntity {
     private String narrative;
     private String concepts;
     private String contentAfterSeg;
+    private int termsNum;
 
     public QueryEntity() {
         number = "";
@@ -18,6 +19,7 @@ public class QueryEntity {
         narrative = "";
         concepts = "";
         contentAfterSeg = "";
+        termsNum = 0;
     }
 
     public String getNumber() {
@@ -66,5 +68,13 @@ public class QueryEntity {
 
     public void setContentAfterSeg(String contentAfterSeg) {
         this.contentAfterSeg = contentAfterSeg;
+    }
+
+    public int getTermsNum() {
+        return termsNum;
+    }
+
+    public void setTermsNum(int termsNum) {
+        this.termsNum = termsNum;
     }
 }
