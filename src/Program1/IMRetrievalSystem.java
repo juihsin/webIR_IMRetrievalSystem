@@ -40,10 +40,13 @@ public class IMRetrievalSystem {
         termFrequencyOfQuery.calcTermFreEachQuery(trainQuerys); // 儲存詞出現在哪個query，以及出現的頻率
         termFrequencyOfQuery.calcTotalTermEachQuery(trainQuerys); // 儲存每個檔案的總詞數
 
-        // TODO calcTermFreEachQuery TF-IDF
+        // TODO CalcTermFreEachQuery TF-IDF
+        // TODO Choose one query
+        // TODO Split the query word by word
+        // TODO one word, use ArrayList[][] store 
         CalcTFIDF calcTFIDF = new CalcTFIDF();
-        int TFNumerator = ; // 分子
-        int TFDenominator = ; // 分母
+        int TFNumerator = 0; // TF分子：一個term在DOCi裡面的出現次數
+        int TFDenominator = 0; // TF分母：DOCi的詞總數
 
         // TODO Evaluation
 
