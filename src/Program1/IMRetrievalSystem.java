@@ -43,10 +43,12 @@ public class IMRetrievalSystem {
         // TODO CalcTermFreEachQuery TF-IDF
         // TODO Choose one query
         // TODO Split the query word by word
-        // TODO one word, use ArrayList[][] store 
+        // TODO one word, use HashMap<String,ArrayList[][] store
         CalcTFIDF calcTFIDF = new CalcTFIDF();
         int TFNumerator = 0; // TF分子：一個term在DOCi裡面的出現次數
         int TFDenominator = 0; // TF分母：DOCi的詞總數
+        int TFNumerator = 0; // IDF分子：DOC總數
+        int TFDenominator = 0; // IDF分母：有出現term的DOC數
 
         // TODO Evaluation
 
