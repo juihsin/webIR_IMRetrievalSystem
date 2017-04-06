@@ -1,14 +1,13 @@
-package Program1.Entity;
 
 import java.util.HashMap;
 
 /**
  * Created by weng on 2017/4/4.
  */
-public class DocTermFrequencyEntity {
+public class QueryTermFrequencyEntity {
     private HashMap<String, HashMap<String, Integer>> termFrequency;
 
-    public DocTermFrequencyEntity() {
+    public QueryTermFrequencyEntity() {
         termFrequency = new HashMap<>();
     }
 

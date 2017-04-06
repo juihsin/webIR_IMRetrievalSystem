@@ -1,6 +1,4 @@
-package Program1.Entity;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**

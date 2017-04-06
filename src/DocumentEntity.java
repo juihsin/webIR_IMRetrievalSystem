@@ -1,6 +1,3 @@
-package Program1.Entity;
-
-import java.util.HashMap;
 
 public class DocumentEntity {
     private String id;

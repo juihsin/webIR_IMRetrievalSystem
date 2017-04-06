@@ -1,7 +1,4 @@
-package Program1.action;
 
-import Program1.Entity.DocumentEntity;
-import Program1.Entity.QueryEntity;
 import com.chenlb.mmseg4j.*;
 
 import java.io.IOException;
@@ -16,7 +13,7 @@ public class ChineseMMSeg {
     private Dictionary dic;
 
     public ChineseMMSeg() {
-        System.setProperty("mmseg.dic.path", "./src/Dictionary");  //這裡可以指定自訂詞庫
+        System.setProperty("mmseg.dic.path", "./dictionary");  //這裡可以指定自訂詞庫
         dic = Dictionary.getInstance();
     }
 
@@ -50,8 +47,7 @@ public class ChineseMMSeg {
                 String docContent = xMLParser.combineDocContent(documentEntity);
                 String docAfterSeg = segWords(docContent, "|");
                 documentEntity.setContentAfterSeg(docAfterSeg);
-                System.out.println(documentEntity.getId());
-                System.out.println(documentEntity.getContentAfterSeg());
+                System.out.println("segDoc: " + documentEntity.getId()); // TODO Test
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -62,11 +58,11 @@ public class ChineseMMSeg {
         XMLParser xMLParser = new XMLParser();
         try {
             for (QueryEntity queryEntity : querys) {
-                String queryContent = xMLParser.combineQueryContent(queryEntity);
+                String queryContent = queryEntity.getConcepts(); // TODO Test: just use concept
+//                String queryContent = xMLParser.combineQueryContent(queryEntity);
                 String queryAfterSeg = segWords(queryContent, "|");
                 queryEntity.setContentAfterSeg(queryAfterSeg);
-                System.out.println(queryEntity.getNumber());
-                System.out.println(queryEntity.getContentAfterSeg());
+                System.out.println("segQuery: " + queryEntity.getNumber()); // TODO Test
             }
         } catch (Exception e) {
             e.printStackTrace();

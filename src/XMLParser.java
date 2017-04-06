@@ -1,4 +1,3 @@
-package Program1.action;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,11 +11,9 @@ import java.util.stream.Stream;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import Program1.Entity.QueryEntity;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
-import Program1.Entity.DocumentEntity;
 
 public class XMLParser {
     // Combine all text of a Document
@@ -37,6 +34,7 @@ public class XMLParser {
         String narrative = queryEntity.getNarrative();
         String concepts = queryEntity.getConcepts();
         StringBuilder queryContent = new StringBuilder();
+//        queryContent = queryContent.append(title).append(concepts).append(concepts); // TODO test: title weight+1
         queryContent = queryContent.append(title).append(question).append(narrative).append(concepts);
         return queryContent.toString();
     }
@@ -58,7 +56,7 @@ public class XMLParser {
         List<DocumentEntity> documents = new ArrayList<>();
         try {
             for (String filePath : filePaths) {
-                System.out.print("read : " + filePath);
+                System.out.print("read : " + filePath); // TODO Test
                 File xmlFile = new File(filePath);
                 DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
                 DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -74,7 +72,7 @@ public class XMLParser {
                     documentEntity.setText(contentElement.getElementsByTagName("text").item(0).getTextContent());
                     documents.add(documentEntity);
                 }
-                System.out.println(" finish!");
+                System.out.println(" finish!"); // TODO Test
             }
         } catch (Exception e) {
             e.printStackTrace();

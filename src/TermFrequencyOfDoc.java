@@ -1,7 +1,3 @@
-package Program1.action;
-
-import Program1.Entity.DocumentEntity;
-import Program1.Entity.DocTermFrequencyEntity;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,9 +1,3 @@
-package Program1.action;
-
-import Program1.Entity.DocTermFrequencyEntity;
-import Program1.Entity.DocumentEntity;
-import Program1.Entity.QueryEntity;
-import Program1.Entity.QueryTermFrequencyEntity;
 
 import java.util.HashMap;
 import java.util.List;

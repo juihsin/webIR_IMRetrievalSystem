@@ -1,4 +1,3 @@
-package Program1.Entity;
 
 /**
  * Created by weng on 2017/4/3.
